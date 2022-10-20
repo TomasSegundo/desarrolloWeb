@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos.css">
+    <title>Tienda</title>
+</head>
+<body class="bodyTienda">
+    <header>
+        <nav class="navegacion">
+            <img class="logoF1" src="../img/f1logonuevo.png" width="200" height="100">
+            <ul class="listaNav">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="calendario.html">Calendario</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Entradas para Singapur-Marina Circuit</h1>
+        <div>compra tus entradas </div>
+    </section>
+    <section>
+        <fieldset>
+            <div>
+                <label for="name">Nombre y Apellido</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="age">Edad</label>
+                <input type="number" name="age" id="age" min="1" max="200">
+            </div>
+            <div>
+                <label for="date">Fecha de Nacimiento</label>
+                <input type="date" name="date" id="date" min="2019-06-10">
+            </div>
+            <div>
+                <strong>Platea</strong>
+                <div>
+                    <label for="alta">Alta</label>
+                    <input type="radio" name="platea" id="alta" value="alta">
+                </div>
+                <div>
+                    <label for="female">Baja</label>
+                    <input type="radio" name="platea" id="alta" value="alta">
+                </div>
+            </div>
+        </fieldset>
+        <input type="submit" value="Buscar">
+    </section>
+    <footer class="pie">
+        <ul class="listaRedes">
+            <li>
+                <a target="_blank" rel="noreferrer noopener" href="https://www.facebook.com/Formula1">Facebook</a>
+            </li>
+            <li>
+                <a target="_blank" rel="noreferrer noopener" href="https://www.instagram.com/f1/">instagram</a>
+            </li>
+            <li>
+                <a target="_blank" rel="noreferrer noopener" href="https://twitter.com/F1">twitter</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
