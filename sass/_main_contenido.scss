@@ -1,0 +1,59 @@
+.main{
+    &__parrafoVideo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color:  #212529;
+        color: white;
+    }
+
+    &__documental{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color:#212529;
+        border-top: solid black;
+        border-bottom: solid black;
+        color: white;
+        align-items: center;
+    }
+
+    &__imgDocumentales{
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__imgdocumentale,img{
+        margin: 10px;
+    }
+
+   &__imgdocumentales,
+   img:hover {
+       transform: scale(1.2);
+       transition: all 1s;
+
+   }
+
+   &__calendario{
+    display: flex;
+    flex-direction: column;
+   }
+
+   &__tituloCalendario{
+    background-color:#212529;
+    color: white;
+   }
+
+   &__proximaCarrera{
+    background-color: #212529;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    height: 400px;
+   }
+
+   
+}

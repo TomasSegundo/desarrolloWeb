@@ -1,0 +1,16 @@
+.footer{
+    background-color:rgb(236, 9, 9);
+    
+    &__listaRedes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        color: black;
+    }
+
+    &__listaRedes li a {
+        text-decoration: none;
+        color: black;
+    }
+}

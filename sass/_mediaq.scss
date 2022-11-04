@@ -1,0 +1,48 @@
+.paginaInicio{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+    "nav"
+    "parrafo"
+    "documental"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.paginacalendario{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+    "nav"
+    "calendario"
+    "carrera"
+    "footer";
+}
+
+
+.header__nav{
+    grid-area: nav;
+}
+
+.main__calendario{
+grid-area: calendario;
+}
+
+.main__proximaCarrera{
+    grid-area:carrera ;
+}
+
+.main__parrafoVideo{
+    grid-area: parrafo;
+}
+
+.main__documental{
+    grid-area: documental;
+}
+
+.footer{
+    grid-area: footer;
+}
