@@ -4,18 +4,18 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        background-color:  #212529;
-        color: white;
+        background-color:$coloruno;
+        color:$colortres;
     }
 
     &__documental{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        background-color:#212529;
-        border-top: solid black;
-        border-bottom: solid black;
-        color: white;
+        background-color:$coloruno;
+        border-top: solid $colorcuatro;
+        border-bottom: solid $colorcuatro;
+        color:$colortres;
         align-items: center;
     }
 
@@ -28,31 +28,76 @@
         margin: 10px;
     }
 
-   &__imgdocumentales,
-   img:hover {
-       transform: scale(1.2);
-       transition: all 1s;
-
-   }
-
    &__calendario{
     display: flex;
     flex-direction: column;
    }
 
    &__tituloCalendario{
-    background-color:#212529;
-    color: white;
+    background-color:$coloruno;
+    color: $colortres;
    }
 
    &__proximaCarrera{
-    background-color: #212529;
+    background-color:$coloruno;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    color: white;
+    color:$colortres;
     height: 400px;
+   }
+
+   &__noticias{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color:$colortres;
+    border: solid $colortres;
+   }
+
+   &__noticiasCheco{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    color: $colortres;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border: solid $colortres;
+   }
+
+   &__noticiasHamilton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: $colortres;
+    border: solid $colortres;
+   }
+
+   &__secNoticias{
+    background-color:$coloruno;
+   }
+
+   &__pilotos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color:$coloruno;
+    color: $colortres;
+
+   }
+
+   &__pilotosDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid $colordos;
+    margin-top: 100px;
+    margin-bottom: 100px;
    }
 
    

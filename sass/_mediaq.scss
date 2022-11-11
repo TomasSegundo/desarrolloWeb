@@ -11,15 +11,55 @@
     grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
+
 .paginacalendario{
     width: 100%;
     height: 100vh;
     display: grid;
     grid-template-areas:
+    "nav" "nav" "nav"
+    "calendario" "calendario"
+    "carrera" "carrera"
+    "footer" "footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.paginaNoticias{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
     "nav"
-    "calendario"
-    "carrera"
-    "footer";
+    "noticias" 
+    "footer" ;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.paginaPilotos{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+    "nav"
+    "pilotos" 
+    "footer" ;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.bodyTienda{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+    "nav"
+    "tienda" 
+    "footer" ;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
 }
 
 
@@ -41,6 +81,19 @@ grid-area: calendario;
 
 .main__documental{
     grid-area: documental;
+}
+
+.main__secNoticias{
+    grid-area: noticias;
+
+}
+
+.main__pilotos{
+    grid-area: pilotos;
+}
+
+.fieldset{
+    grid-area: tienda;
 }
 
 .footer{
