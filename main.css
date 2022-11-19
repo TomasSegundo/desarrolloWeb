@@ -62,10 +62,6 @@
 }
 .main__proximaCarrera {
   background-color: #212529;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
   color: white;
   height: 400px;
 }
@@ -131,7 +127,7 @@
 }
 
 .bodyTienda {
-  background-image: url(https://phantom-marca.unidadeditorial.es/51e03bc1c74df0bd12413d3a233a7786/resize/1320/f/jpg/assets/multimedia/imagenes/2022/09/28/16643689450260.jpg);
+  background-image: url(https://pbs.twimg.com/media/Fg4rcCxXgAMXyPm?format=jpg&name=4096x4096);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -190,4 +186,5 @@ fieldset {
 .main__pilotosDiv:hover {
   transform: scale(1.2);
   transition: all 1s;
+  overflow: hidden
 }/*# sourceMappingURL=main.css.map */

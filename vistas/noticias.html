@@ -1,73 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="F1,Formula 1,deportes,automovilismo,informacion">
     <meta name="decription" content="en F1 Info puedes encontrar toda informacion sobre la f1">
+    <link rel="icon" href="../img/logo1.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../main.css">
     <title>Noticias</title>
 </head>
+
 <body class="paginaNoticias">
     <header class="header">
-        <nav class="header__nav">
-            <img class="header__img" src="../img/f1logonuevo.png" width="200" height="100">
-            <ul class="header__list">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="calendario.html">Calendario</a></li>
-                <li><a href="tienda.html">Tienda</a></li>
-                <li><a href="noticias.html">Noticias</a></li>
-                <li><a href="pilotos.html">Pilotos</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light header__nav">
+            <div class="container-fluid">
+             <a href="../index.html"><img class="header__img" src="../img/f1logonuevo.png" width="200" height="100"></a> 
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav header__list">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="calendario.html">Calendario</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="tienda.html">Tienda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="noticias.html">Noticias</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pilotos.html">Pilotos</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
-    <main class="main">
-        <section class="main__secNoticias">
-            <div class="main__noticias">
-                <div>
-                    <h3>Norris indispuesto por intoxicacion alimentaria</h3>
-                    <p>El británico no se encuentra bien, aparentemente por lo que puede ser una intoxicación alimentaria. Descansará todo el jueves y el equipo espera que mañana, viernes, esté en condiciones de sentarse al volante del coche, aunque ya han tomado precauciones por si ello no fuera posible.</p>
-                </div>
-                <div>
-                    <img src="https://depor.com/resizer/xmtoO8F2G4FuVZykwNLcjdtGTfs=/1200x900/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5URFVZR6WNCC5OXQX5VQZDBD6E.jpg"  alt="Lando Norris" width="270" height="280">
-                </div>
+    <main class="main__secNoticias">
+        <section class="container">
+            <div class="clearfix text-center text-white">
+                <img src="../img/lando-norris-mclaren-1.jpg" class="col-md-6 float-md-end mb-3 ms-md-3 img-fluid" alt="lando norris"> 
+                <h5>Norris indispuesto por intoxicacion alimentaria</h5>
+                <p>El británico no se encuentra bien, aparentemente por lo que puede ser una intoxicación alimentaria.
+                    Descansará todo el jueves y el equipo espera que mañana, viernes, esté en condiciones de sentarse al
+                    volante del coche, aunque ya han tomado precauciones por si ello no fuera posible</p>
+                <p>Nyck de Vries sería el piloto que le sustituiría si no puede correr este fin de semana, según ha anunciado Will
+                    Buxton, ya que es el único piloto reserva que tienen los de Woking en Interlagos.</p>
+                <p>Hay que tener en cuenta que el viernes de São Paulo no es normal. Tras la primera sesión de entrenamientos libres, se
+                    celebra la clasificación para la carrera al sprint del sábado, lo que limita el tiempo de recuperación.</p>
             </div>
-            <div class="main__noticiasCheco">
-                <div>
-                    <h3>El duelo que Checo Pérez quiere para el cierre de la temporada de la F1</h3>
-                    <p>Solo restan dos carreras más para conocer si Sergio Pérez conseguirá el subcampeonato o será rebasado por Charles Leclerc en el cierre de la Temporada 2022 de la Fórmula 1.</p>
-                </div>
-                <div>
-                    <img src="https://www.infobae.com/new-resizer/xtMGdITEae_x0V7WrmTaDe6Zibk=/992x744/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/AM4DKZGDIDYNMFZPSRD5DTBYDQ.jpg" alt="Sergio Pérez" width="270" height="280">
-                </div>
+            <div class="clearfix text-center text-white">
+                 <img src="../img/checo perez.jpg" class="col-md-6 float-md-end mb-3 ms-md-3 img-fluid " alt="Checo perez"> 
+                <h5>El duelo que Checo Pérez quiere para el cierre de la temporada de la F1</h5>
+                <p>Solo restan dos carreras más para conocer si Sergio Pérez conseguirá el subcampeonato o será rebasado
+                    por Charles Leclerc en el cierre de la Temporada 2022 de la Fórmula 1.</p>
+                <p>En Red Bull Racing ya festejaron el título de Max Verstappen y el campeonato de Constructores, lo único que faltaría
+                    sería el subcampeonato de Checo Pérez para llevarse el 1 - 2 en el campeonato de pilotos.</p>
+                <p>Con todo eso en mente, Checo ya adelantó cuál será el duelo que quiere protagonizar en estas dos últimas carreras del
+                    año, ya que conoce de la importancia del Gran Premio de Brasil y el de Abu Dabi.</p>
             </div>
-            <div class="main__noticiasHamilton">
-                <div>
-                    <h3>Hamilton: difícil no sentirme frustrado con mi temporada 2022</h3>
-                    <p>El piloto británico aseguró que fue muy difícil no frustrarse durante la temporada 2022 de F1 por el pobre rendimiento de su Mercedes W13.</p>
-                </div>
-                <div>
-                    <img src="https://cdn-1.motorsport.com/images/amp/2wBVLz30/s1000/lewis-hamilton-mercedes-amg-ar.webp" alt="lewis Hamilton" width="270" height="280">
-                </div>
+            <div class="clearfix text-center text-white">
+                 <img src="../img/lewis-hamilton.jpg"  class="col-md-6 float-md-end mb-3 ms-md-3 img-fluid" alt="lewis Hamilton"> 
+                <h5>Hamilton:difícil no sentirme frustrado con mi temporada 2022</h5>
+                <p>El piloto británico aseguró que fue muy difícil no frustrarse durante la temporada 2022 de F1 por el
+                    pobre rendimiento de su Mercedes W13.</p>
+                <p>Lewis Hamilton llega al Gran Premio de Abu Dhabi de este fin de semana con una última oportunidad de mantener su
+                    récord de ganar una carrera en todas las temporadas en las que ha competido, desde 2007.</p>
+                <p>El récord de Hamilton de 15 temporadas consecutivas con una victoria empata actualmente con el esfuerzo de Michael
+                    Schumacher, establecido entre 1992 y 2006, aunque Schumacher no logró ganar en 1991, cuando debutó a mitad de
+                    temporada.</p>
             </div>
         </section>
     </main>
     <footer class="footer">
-        <ul class="footer__listaRedes">
-            <li>
-                <a target="_blank" rel="noreferrer noopener" href="https://www.facebook.com/Formula1">Facebook</a>
+        <ul class="nav justify-content-center align-items-center">
+            <li class="nav-item">
+            <a href="../index.html"><img src="../img/f1logonuevo.png" width="200" height="100"></a>
             </li>
-            <li>
-                <a target="_blank" rel="noreferrer noopener" href="https://www.instagram.com/f1/">instagram</a>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="https://www.instagram.com/f1/">Instagram</a>
             </li>
-            <li>
-                <a target="_blank" rel="noreferrer noopener" href="https://twitter.com/F1">twitter</a>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="https://www.facebook.com/Formula1">Facebook</a>
             </li>
-        </ul>
-
+            <li class="nav-item">
+              <a class="nav-link text-white" href="https://twitter.com/F1">twitter</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="https://youtu.be/jtyFdK2Y33s">Youtube</a>
+            </li>
+          </ul>
     </footer>
-    
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

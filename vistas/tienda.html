@@ -6,70 +6,160 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="F1,Formula 1,deportes,automovilismo,informacion">
     <meta name="decription" content="en F1 Info puedes encontrar toda informacion sobre la f1">
+    <link rel="icon" href="../img/logo1.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../main.css">
     <title>Tienda</title>
 </head>
 <body class="bodyTienda">
     <header class="header">
-        <nav class="header__nav">
-            <img class="header__img" src="../img/f1logonuevo.png" width="200" height="100">
-            <ul class="header__list">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="calendario.html">Calendario</a></li>
-                <li><a href="tienda.html">Tienda</a></li>
-                <li><a href="noticias.html">Noticias</a></li>
-                <li><a href="pilotos.html">Pilotos</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light header__nav">
+            <div class="container-fluid">
+             <a href="../index.html"><img class="header__img" src="../img/f1logonuevo.png" width="200" height="100"></a> 
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav header__list">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="calendario.html">Calendario</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="tienda.html">Tienda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="noticias.html">Noticias</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pilotos.html">Pilotos</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
-    <section>
+    <section class="container text-white">
         <h1>Entradas para Singapur-Marina Circuit</h1>
         <div>compra tus entradas </div>
-    </section>
-    <section>
-        <fieldset>
-            <div>
-                <label for="name">Nombre y Apellido</label>
-                <input type="text" name="name" id="name">
-            </div>
-            <div>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
-            </div>
-            <div>
-                <label for="age">Edad</label>
-                <input type="number" name="age" id="age" min="1" max="200">
-            </div>
-            <div>
-                <label for="date">Fecha de Nacimiento</label>
-                <input type="date" name="date" id="date" min="2019-06-10">
-            </div>
-            <div>
-                <strong>Platea</strong>
-                <div>
-                    <label for="alta">Alta</label>
-                    <input type="radio" name="platea" id="alta" value="alta">
+        <div class="d-flex justify-content-around">
+            <div class="card" style="width: 18rem;">
+                <img src="../img/yasmarinacirucuit1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-black">South</h5>
+                  <a href="#" class="btn btn-primary">Elegir</a>
                 </div>
-                <div>
-                    <label for="female">Baja</label>
-                    <input type="radio" name="platea" id="alta" value="alta">
+              </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../img/yasmarinacirucuit2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-black">North</h5>
+                  <a href="#" class="btn btn-primary">Elegir</a>
                 </div>
+              </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../img/yasmarinacirucuit3.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-black">
+                  <h5 class="card-title">West</h5>
+                  <a href="#" class="btn btn-primary">Elegir</a>
+                </div>
+              </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../img/yasmarinacirucuit4.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-black">
+                  <h5 class="card-title">Marina</h5>
+                  <a href="#" class="btn btn-primary">Elegir</a>
+                </div>
+              </div>
+        </div>
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+              <label for="validationCustom01" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+              <div class="valid-feedback">
+                ¡Se ve bien!
+              </div>
             </div>
-        </fieldset>
-        <input type="submit" value="Buscar">
+            <div class="col-md-4">
+              <label for="validationCustom02" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+              <div class="valid-feedback">
+                ¡Se ve bien!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustomUsername" class="form-label">Nombre de usuario</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                <div class="invalid-feedback">
+                  Por favor, elije un nombre de usuario.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom03" class="form-label">Numero de Tarjeta</label>
+              <input type="number" class="form-control" id="validationCustom03" required>
+              <div class="invalid-feedback">
+                Proporciona una ciudad válida.
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom04" class="form-label">Tarjeta</label>
+              <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Elige...</option>
+                <option>Visa</option>
+                <option>MasterCard</option>
+              </select>
+              <div class="invalid-feedback">
+                Selecciona un estado válido.
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom05" class="form-label">Codigo de Seguridad</label>
+              <input type="text" class="form-control" id="validationCustom05" required>
+              <div class="invalid-feedback">
+                Proporciona un código de Seguridad válido.
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  Acepta los términos y condiciones
+                </label>
+                <div class="invalid-feedback">
+                  Debe estar de acuerdo antes de enviar.
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Enviar formulario</button>
+            </div>
+          </form>
+
     </section>
     <footer class="footer">
-        <ul class="footer__listaRedes">
-            <li>
-                <a target="_blank" rel="noreferrer noopener" href="https://www.facebook.com/Formula1">Facebook</a>
+        <ul class="nav justify-content-center align-items-center">
+            <li class="nav-item">
+            <a href="../index.html"><img src="../img/f1logonuevo.png" width="200" height="100"></a>
             </li>
-            <li>
-                <a target="_blank" rel="noreferrer noopener" href="https://www.instagram.com/f1/">instagram</a>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="https://www.instagram.com/f1/">Instagram</a>
             </li>
-            <li>
-                <a target="_blank" rel="noreferrer noopener" href="https://twitter.com/F1">twitter</a>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="https://www.facebook.com/Formula1">Facebook</a>
             </li>
-        </ul>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="https://twitter.com/F1">twitter</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="https://youtu.be/jtyFdK2Y33s">Youtube</a>
+            </li>
+          </ul>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 </body>
 </html>
